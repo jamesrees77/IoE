@@ -1,0 +1,74 @@
+<div class="main">
+  <div class="container-fluid darker-bg">
+    <div class="row">
+      <div class="col-md-5 app-bg">
+      <form (ngSubmit)= "onSubmit()" #form01 *ngIf="!model.firstname || !model.lastname" >
+
+        <div class="form-group" style="padding-top: 15%;">
+          <label for="firstname">What's your first name?</label>
+          <input type="text" class="form-control" id="firstname" required [(ngModel)]="model.firstname" name="firstname" #firstname="ngModel" [ngModelOptions]="{updateOn: 'submit'}">
+          <div [hidden]="firstname.valid || firstname.pristine" class="alert alert-danger">
+          <p> First name is required</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lastname">What's your last name?</label>
+          <input type="text" class="form-control" id="lastname" required [(ngModel)]="model.lastname" name="lastname" #lastname="ngModel" [ngModelOptions]="{updateOn: 'submit'}">
+          <div [hidden]="lastname.valid || lastname.pristine" class="alert alert-danger">
+            <p>Last name is required</p>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-info">
+          Submit
+        </button>
+
+      </form>
+      <div *ngIf="model.firstname && model.lastname">
+        <h2 class="pad-h2"> Welcome {{model.firstname}} {{model.lastname}}
+        </h2>
+        <h3> Are you ready to begin? </h3>
+      </div>
+    </div>
+
+    <div class="col-md-3 small-bg">
+        <h2 style="padding-top: 75%;"> Learn more about Arduino? </h2>
+        <a href="http://arduino.com">  <button class="btn btn-info">Arduino</button></a>
+    </div>
+    <div class="col-md-3 small-bg2">
+        <h2 style="padding-top: 75%;"> Learn more about how we made it? </h2>
+        <a href="http://arduino.com">  <button class="btn btn-info">Learn</button></a>
+    </div>
+    </div>
+<div class="row">
+  <div class="col-md-5 text-center">
+    <div class="row">
+      <div class="col-md-6">
+      <button class="btn btn-info btn-lg btn-increase" (click)="onEnter()"> I'm Ready!</button>
+      </div>
+      <div class="col-md-6">
+      <button class="btn btn-danger btn-lg btn-increase" (click)="onEnter()">I'm Finished</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 minus-margin">
+      <h2 style="padding-top: 75%;"> Learn more about us! </h2>
+      <a routerLink="/about">  <button class="btn btn-info">about us</button></a>
+  </div>
+  <div class="col-md-3 minus-margin2">
+      <h2 style="padding-top: 75%;"> What's next?</h2>
+     <button class="btn btn-info">next?</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-5 bgwhite" *ngIf="!appStart">
+
+    <h3> Application beginning...</h3>
+    <!-- <app-pubnub></app-pubnub> -->
+    <div class="message text-center">
+    {{this.myMessage[this.myMessage.length -1].message.Letter[0]}}
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>

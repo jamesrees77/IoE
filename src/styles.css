@@ -1,1 +1,395 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+html {
+   font-size: 62.5%;
+   max-height: 62.5%;
+
+}
+
+body {
+  /*padding-top: 70px;*/
+  font-family: Roboto;
+  color: #2B3045;
+
+}
+
+/*-------------------------------TENANT----------------------------*/
+#mainNav{
+  background-image: linear-gradient(90deg, #439EE0 0%, #26ADE6 100%);
+ /*margin-top: -0.5%;*/
+ padding-top: 1rem;
+ padding-bottom: 3rem;
+ margin-bottom: 0;
+
+}
+
+
+
+.navbar-toggler.navbar-toggler-right {
+  color:white;
+  border: 1px solid white;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+
+  font-size: 1.2rem;
+  color: #ffffff;
+  letter-spacing: 0.8px;
+  text-align: center;
+ padding-right: 5rem;
+}
+.navbar-brand.js-scroll-trigger {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+
+.btn.signup {
+    background-image: linear-gradient(90deg, #F77062 0%, #FE5196 100%);
+    color: #FFFFFF;
+  text-align: center;
+
+}
+
+.mx-auto {
+  font-size: 3rem;
+}
+
+#header {
+  background-image: linear-gradient(90deg, #439EE0 0%, #26ADE6 100%);
+ color: #D8D8D8;
+ width: 100%;
+ padding-top: 2rem;
+ padding-bottom: 1rem;
+
+
+
+}
+#homeNav {
+ background: rgba(0,0,0,0.2);
+
+  width:100%;
+  left:0px;
+  right:0px;
+  top:0px;
+
+
+}
+
+.container-style {
+  margin-top: 25%;
+  margin-bottom: 10%;
+
+}
+
+/*.navbar.fixed-top {
+  background-color: white;
+}*/
+
+
+
+#landing {
+
+  background:
+  linear-gradient(
+    rgba(67, 158, 224, 0.45),
+    rgba(38, 173, 230, 0.45)
+  ),
+  url('assets/hand2.jpg');
+
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+   background-position: center;
+  display: table;
+ margin-top: -7%;
+padding-bottom: 15%;
+
+}
+
+.landing-header {
+  font-size: 4rem;
+  /*white-space: nowrap;*/
+  color: #ffffff;
+
+
+}
+/*#homeNav {
+ background: rgba(0,0,0,0.2);
+
+  width:100%;
+padding: 1%;
+
+
+}*/
+
+/*.container-style {
+  margin-top: 25%;
+  margin-bottom: 10%;
+
+}*/
+
+/*.navbar.fixed-top {
+  background-color: white;
+}*/
+
+
+
+/*#landing {
+
+  background:
+
+  url('assets/sign-bg.png');
+
+  width: 100%;
+  height: auto;
+  background-size: cover;
+   background-position: center;
+  display: table;
+
+
+}*/
+
+/*.landing-header {
+  font-size: 4rem;
+  white-space: nowrap;
+  color: #ffffff;
+
+
+}*/
+
+.home-font{
+  font-size: 2rem;
+
+}
+
+
+
+
+
+.container-style p {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.cards {
+   box-shadow: 0 4px 8px 0 #e0e0e0e0,
+    0 6px 20px 0 #e0e0e0e0;
+    border-radius: 1%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.infoCard {
+  font-size: 2.0rem;
+  color: #2B3045;
+  letter-spacing: 0.83px;
+  text-align: center;
+  margin-bottom: -2%;
+  white-space: nowrap;
+
+}
+
+.icons {
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+   padding-bottom: 10%;
+}
+
+
+.info {
+  font-size: 1.6rem;
+  color: #2B3045;
+  letter-spacing: 1.07px;
+  text-align: center;
+  line-height: 25px;
+  padding-top: 5%;
+
+}
+.intro {
+  /*font-family: .SFNSDisplay;*/
+  font-size: 3.0rem;
+  color: #2B3045;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 28px;
+   margin-top: 5rem;
+}
+
+.sml-img {
+  width: 100%;
+  height: 100%;
+}
+.home-features-dark {
+  padding-top: 5%;
+    background-color: #FBF4EE;
+}
+
+.section-padding {
+  padding: 5% 2.5% 5% 2.5%;
+}
+.icon-img {
+  width: 100%;
+
+
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    margin: auto;
+    text-align: center;
+}
+.card p {
+  font-size: 25px;
+}
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+
+
+.sidenav {
+  background-color: #001a33;
+    height: 100%;
+    width: 5%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    overflow-x: hidden;
+    padding-top: 20px;
+    /*opacity: 0.7;*/
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover img:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 5%; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    /*padding: 0px 10px;*/
+}
+
+.nav-icon {
+
+  margin-top: 100%;
+}
+
+.app-bg {
+  background:
+  linear-gradient(
+    rgba(67, 158, 224, 0.3),
+    rgba(38, 173, 230, 0.3)
+  ),
+  url('assets/robo.jpg');
+  width: 100%;
+background-size: cover;
+  background-position: center;
+
+  padding: 10% 5% 5% 5%;
+margin: 2% 1% 2% 1%;
+  color: #ffffff;
+}
+
+.small-bg {
+  background-image: url('assets/yellow.jpg');
+  width: 100%;
+  background-size: cover;
+    background-position: center;
+  margin: 2% 1% 15% 1%;
+  color: #ffffff;
+
+}
+.small-bg2 {
+  background:
+  linear-gradient(
+    rgba(67, 158, 224, 0.45),
+    rgba(38, 173, 230, 0.45)
+  ),
+  url('assets/hand2.jpg');
+  width: 100%;
+
+  margin: 2% 1% 15% 1%;
+  color: #ffffff;
+
+}
+.pad-h2{
+  padding-top: 33%;
+}
+
+.btn-increase{
+  width: 100%;
+  padding: 10%;
+  margin-left: 5%;
+
+}
+.minus-margin {
+  background-image: url('assets/blue.jpg');
+  width: 100%;
+  background-size: cover;
+    background-position: center;
+  margin: -12.5% 1% 15% 3%;
+  color: #ffffff;
+}
+.minus-margin2 {
+  background-image: url('assets/green.jpg');
+  width: 100%;
+  background-size: cover;
+    background-position: center;
+  margin: -12.5% 1% 15% 1%;
+  color: #ffffff;
+}
+
+.form-inline {
+      display: inline;
+}
+.navbar {
+  margin-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #ffffff;
+}
+
+.darker-bg {
+  background-color: #FBF4EE;
+  padding-top: 5%;
+}
+
+.sml0icon {
+  width: 50%;
+}
+.bgwhite {
+  background-color: #ffffff;
+  width: 100%;
+  margin-top: -18%;
+  margin-left: 1%;
+  margin-bottom: 5%;
+  color: red;
+  padding-top:1%;
+}

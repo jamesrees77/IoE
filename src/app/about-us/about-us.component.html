@@ -1,0 +1,96 @@
+<div class="main">
+<div class="container">
+
+      <div class="row text-left section-padding">
+         <div class="col-md-6">
+           <span class = "numbers"> 01 </span>
+              <p class="home-font"> What did we do</p>
+            <hr class ="line">
+
+            <p class="home-font"> We have created a glove that will help communicate
+              between people who can and can not use sign language.
+              We have created a glove, that when connected  to our app will
+              repeat back the letters of the sign language alphebet based on the users
+              hand movement.
+            </p>
+         </div>
+         <div class="col-md-6 text-right">
+           <img class ="img-icn" src="assets/people.png" alt="">
+         </div>
+      </div>
+   </div>
+   <div class="container-fluid">
+
+         <div class="row home-features-dark section-padding text-left">
+           <div class="col-md-6 text-left">
+             <img class ="img-icn que" src="assets/ppl.png" alt="">
+           </div>
+            <div class="col-md-6">
+              <span class = "numbers"> 02 </span>
+                 <p class="home-font"> Why did we do it?</p>
+               <hr class ="line">
+
+               <p class="home-font"> We created this as a way of making university life more
+                 accessible for students with hearing difficulties. This device will allow
+                 people to communicate through sign language, even to those who do not know it.
+                 <br> <br>
+
+
+               </p>
+            </div>
+
+         </div>
+      </div>
+
+      <div class="container section-padding">
+          <p class="intro"> Larger scale issues </p>
+        <div class="row">
+          <div class="col-md-8 offset-md-2 text-center">
+            <p class="home-font">     We also identified the problem that there are many different sign languages all around the world. Our device
+                 will help communicate these differences.
+<br>
+                 <button class="btn btn-info" (click) = "onClick()"> View Map </button></p>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-md-8 offset-md-2 ">
+          <img class ="sml-img"src="assets/sign-lang.png" *ngIf="!map" alt="">
+        </div>
+        </div>
+      </div>
+
+<div class="container-fluid home-features-dark section-padding">
+  <p class="intro"> Who are we?</p>
+  <p class="text-center"> Click our faces to find out about us</p>
+  <div class="row text-center">
+    <div class="col-md-4 offset-md-2">
+      <div class="card">
+  <img (click)="onClickImage()"class="icon-img"src="assets/james.jpg" alt="James">
+  <div class="hidden" *ngIf="!show">
+  <h1>James Rees</h1>
+  <p class="title">Univerity of the West of England</p>
+  <p>Developer</p>
+  <p>Designer</p>
+
+  <p><button class="btn btn-info" (click)="onClickImage()">Close</button></p>
+</div>
+</div>
+      <!-- <img class="icon-img" src="assets/james.jpg" alt=""> -->
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+  <img (click)="onClickImage()" class="icon-img"src="assets/lana.jpg" alt="James">
+  <div class="hidden"  *ngIf="!show">
+  <h1>Lana Elworthy</h1>
+  <p class="title">Univerity of the West of England</p>
+  <p>Designer</p>
+  <p>Developer</p>
+
+  <p><button class="btn btn-info" (click)="onClickImage()">Close</button></p>
+  </div>
+</div>
+      <!-- <img class="icon-img" src="assets/james.jpg" alt=""> -->
+    </div>
+  </div>
+</div>
+</div>
