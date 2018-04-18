@@ -6,6 +6,7 @@
 
         <div class="form-group" style="padding-top: 15%;">
           <label for="firstname">What's your first name?</label>
+          <!-- TAKING MODEL INFO  -->
           <input type="text" class="form-control" id="firstname" required [(ngModel)]="model.firstname" name="firstname" #firstname="ngModel" [ngModelOptions]="{updateOn: 'submit'}">
           <div [hidden]="firstname.valid || firstname.pristine" class="alert alert-danger">
           <p> First name is required</p>
@@ -24,6 +25,7 @@
 
       </form>
       <div *ngIf="model.firstname && model.lastname">
+        <!-- TAKING USER INPUT AND PASTING IT -->
         <h2 class="pad-h2"> Welcome {{model.firstname}} {{model.lastname}}
         </h2>
         <h3> Are you ready to begin? </h3>
@@ -57,15 +59,18 @@
   <div class="col-md-3 minus-margin2">
       <h2 style="padding-top: 75%;"> What's next?</h2>
      <button class="btn btn-info">next?</button>
-     
+    {{response}}
   </div>
+
 </div>
 <div class="row">
+
   <div class="col-md-5 bgwhite" *ngIf="!appStart">
 
     <h3> Application beginning...</h3>
     <!-- <app-pubnub></app-pubnub> -->
     <div class="message text-center">
+      <!-- DRAW IN PUBNUB DATA FROM TS FILE  -->
     {{this.myMessage[this.myMessage.length -1].message.Letter[0]}}
 
     </div>

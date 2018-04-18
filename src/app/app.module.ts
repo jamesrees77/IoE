@@ -31,7 +31,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
       { path: '', component: HomeInfoComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'arduino', component: ArduinoAppComponent },
-
+// ROUTING
 
 
     ])
