@@ -49,19 +49,20 @@ export class ArduinoAppComponent implements OnInit {
                 channel: 'jChannel',
 
                 reverse: false, // false is the default
-                count: 10 pus, // 100 is the default
-                stringifiedTimeToken: true // false is the default
+                count: 10, // 100 is the default
+                stringifiedTimeToken: true
+                // false is the default
             },
 
-            function(status, response) {
+          function(status, response) {
                 // LOG HISTORY TO CONSOLE
 
 
                 console.log("History Below: ")
-                console.log(response.messages);
+                console.log(response.messages)
             }
 
-        );
+        )
 
 
 
