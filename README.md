@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
 
-FIND THE ARDUINO CODE IN GLOVE.IO and the APP CODE IN SRC 
+FIND THE ARDUINO CODE IN GLOVE.INO and the APP CODE IN SRC 
 
 Building a sign language glove using an Arduino.
 
