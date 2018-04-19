@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent implements OnInit {
-
+// SETTING VARIABLES
   public map = true;
   public show = true;
   constructor() { }
@@ -14,9 +14,11 @@ export class AboutUsComponent implements OnInit {
   ngOnInit() {
   }
 
+  // CREATING CLICK EVENT  TO SHOW MAP AND INFO ABOUT US
+
 onClick() {
   this.map = !this.map;
-  
+
 }
 
 onClickImage() {
